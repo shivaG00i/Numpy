@@ -47,9 +47,18 @@ delt2=np.array([[12,89,77,4],[80,87,76,79]])
 new_arr2=np.delete(delt2,0,axis=0)
 print(new_arr2)
 print()
+#np.delete(delt2, 0, axis=0) removes the first row (index 0) along axis=0 (i.e., row-wise deletion).
+# [[80 87 76 79]]
+
 
 new_arr3=np.delete(delt2,1,axis=1)
 print(new_arr3)
+
+# np.delete(delt2, 1, axis=1) means:
+# Delete column at index 1 (i.e., the second column) across all rows.
+# [[12 77  4]
+#  [80 76 79]]
+
 
 #update the array
 
@@ -59,7 +68,11 @@ update1dArray[2]=8
 print(update1dArray)
 
 update2DArray=np.array([[1,8,9,7],[7,6,4,1]])
-update2DArray[0,0]=90
+update2DArray[0,0]=90 # Change element at row 0, col 0 → 90
 update2DArray[0,3]=990
 update2DArray[1,2]=180
-print(update2DArray)
+
+print(update2DArray)    
+
+# [[ 90   8   9 990]
+#  [  7   6 180   1]]
