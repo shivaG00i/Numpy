@@ -38,8 +38,11 @@ print()
 #creating full Array
 full=np.full((2,3),5)
 print(full)
-
 print()
+
+# [[5 5 5]
+#  [5 5 5]]
+
 
 #creating arange Array
 arna=np.arange(0,21,2) # So: start = 0, stop = 21, step = 2
@@ -55,13 +58,20 @@ line=np.linspace(0,10,5) #start = 0 stop = 10 num = 5
 print(line)
 
 # [ 0.   2.5  5.   7.5 10. ]
-print()
+print()       
+                                                  # Use rand() for floating-point numbers in [0, 1).
+
+                                                  # Use randint() for integers in a specified range.
 
 #creating random Array
 rand1=np.random.rand(2,2)
 print(rand1)
 
 print()
+
+# [[0.37454012 0.95071431]
+#  [0.73199394 0.59865848]]
+
 
 rand2=np.random.randint(1,9,(2,3))
 print(rand2)
@@ -89,5 +99,6 @@ print(eye)
 #  [0. 0. 0. 0. 1. 0. 0.]
 #  [0. 0. 0. 0. 0. 1. 0.]
 #  [0. 0. 0. 0. 0. 0. 1.]]
+
 
 
